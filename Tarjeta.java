@@ -9,7 +9,14 @@ public class Tarjeta
     
     public void depositar(float dinero)
     {
-        Saldo=Saldo+dinero;
+        if(dinero>0)
+        {
+            Saldo=Saldo+dinero;
+        }
+        else
+        {
+            System.out.println("No se puede depositar numeros negativos");
+        }   
     }
     
     public float retirar(float dinero)
