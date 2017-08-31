@@ -7,6 +7,10 @@ public class Tarjeta
         Saldo=0;
     }
     
+    /**
+     *  Nos permite depositar dinero en la tarjeta.
+     *  @param dinero es la variable que nos pregunta por cuanto dinero deseamos depositar.
+     */
     public void depositar(float dinero)
     {
         if(dinero>0)
@@ -19,6 +23,11 @@ public class Tarjeta
         }   
     }
     
+    /**
+     * Nos permite retirar dinero de la tarjeta.
+     * @param dinero es la variable para decirle cuanto dinero retiraremos de la tarjeta.
+     * @return Devuelve la cantidad de dinero retirada, o 0 si no tiene suficiente saldo.
+     */
     public float retirar(float dinero)
     {
         if(Saldo>=dinero)
@@ -32,6 +41,9 @@ public class Tarjeta
         }
     }
     
+    /**
+     * Nos permite consultar cuanto saldo tiene la tarjeta.
+     */
     public void consultar()
     {
         System.out.println("Su saldo es de :" + Saldo + "\n");
